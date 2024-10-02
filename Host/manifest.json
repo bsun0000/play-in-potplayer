@@ -1,0 +1,7 @@
+{
+  "name": "play_in_potplayer",
+  "description": "description",
+  "path": "PlayInPotplayer.exe",
+  "type": "stdio",
+  "allowed_origins": ["chrome-extension://ppmmpfakebjkoblnfddpkmceigomppph/"]
+}

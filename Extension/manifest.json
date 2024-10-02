@@ -1,0 +1,25 @@
+{
+  "name": "Play Externally: PotPlayer",
+  "version": "0.2.2",
+  "manifest_version": 3,
+  "minimum_chrome_version": "116",
+  "description": "Play a video link in PotPlayer player. Requires background Native Messaging handler.",
+  "homepage_url": "https://github.com/bSun0000/",
+  "icons": {
+    "128": "potplayer-logo.png"
+  },
+  "action": {
+    "default_icon": {
+		"128": "potplayer-logo.png"
+	},
+    "default_title": "Play Externally"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "contextMenus",
+	"nativeMessaging",
+    "alarms"
+  ]
+}
