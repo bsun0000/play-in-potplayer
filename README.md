@@ -3,10 +3,10 @@ A Chrome extension and Native Messaging host program to pass URL links to the Po
 
 ## Overview
 
-This project uses the Native Messaging API to interface (via host program) with the PotPlayer program. The host program can:
+This project uses the Native Messaging API to interface (via host program) with the PotPlayer. The host program can:
 
 1. Run the player (if not running) with the `/ADD` parameter, or
-2. Send the CMD command directly to the existing player instance - this is much faster than running the player just to add a new URL to the existing window.
+2. Send the command directly to the existing player instance - this is much faster than running the player just to add a new URL to the existing window.
 
 The developer of PotPlayer decided not to add this functionality to the main executable file, for some reason. Instead, it resides in PotPlayer64.dll, which is protected by a heavy virtualizer and is relatively slow to launch, especially if your system is loaded with heavy background tasks.
 
